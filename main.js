@@ -3,15 +3,15 @@ let startGame = () => {
     var canv = document.getElementById("myCanvas");
     var contex = canv.getContext("2d");
     contex.fillStyle = "black"
-    contex.fillRect(500, 0 ,2 ,200 )
+    contex.fillRect(500, 0 ,1 ,200 )
 
-    var imgCar = document.getElementById("scream");
-    var imgTax = document.getElementById("vosvos");
+    var imgCar = document.getElementById("Vosvos");
+    var imgTax = document.getElementById("taxi");
 
     posVosvos = 0;
     posTaxi = 0;
-    var moveVos = 1 + Math.floor(Math.random() * 5);
-    var moveTax = 1 + Math.floor(Math.random() * 5);
+    var moveVos = 1 + Math.floor(Math.random() * 4);
+    var moveTax = 1 + Math.floor(Math.random() * 4);
 
     setInterval(function () {
 
