@@ -13,8 +13,8 @@ let startGame = () => {
 
 
     setInterval(function () {
-        var moveVos = 1 + Math.floor(Math.random() * 4);
-        var moveTax = 1 + Math.floor(Math.random() * 4);
+        var moveVos = 1 + Math.floor(Math.random() * 5);
+        var moveTax = 1 + Math.floor(Math.random() * 5);
         posVosvos += moveVos;
         posTaxi += moveTax;
 
