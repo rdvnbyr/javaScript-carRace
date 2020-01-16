@@ -12,27 +12,24 @@ let startGame = () => {
     posTaxi = 0;
 
 
-    setInterval(function () {
+    var stopGame = setInterval(function () {
         var moveVos = 1 + Math.floor(Math.random() * 5);
         var moveTax = 1 + Math.floor(Math.random() * 5);
         posVosvos += moveVos;
         posTaxi += moveTax;
 
         if (posVosvos > 700) {
-            moveVos = 0;
-            moveTax = 0;
+            clearInterval(stopGame);
             document.getElementById("text_p").innerHTML = `Vosvos kazandi.`
         }
 
         if (posTaxi > 700) {
-            moveVos = 0;
-            moveTax = 0;
+            clearInterval(stopGame);
             document.getElementById("text_p").innerHTML = `Taxi kazandi.`
         }
 
         if (posTaxi > 700 && posVosvos > 700) {
-            moveVos = 0;
-            moveTax = 0;
+            clearInterval(stopGame);
             document.getElementById("text_p").innerHTML = `Beraberlik.`
         }
 
