@@ -10,11 +10,11 @@ let startGame = () => {
 
     posVosvos = 0;
     posTaxi = 0;
-    var moveVos = 1 + Math.floor(Math.random() * 4);
-    var moveTax = 1 + Math.floor(Math.random() * 4);
+
 
     setInterval(function () {
-
+        var moveVos = 1 + Math.floor(Math.random() * 4);
+        var moveTax = 1 + Math.floor(Math.random() * 4);
         posVosvos += moveVos;
         posTaxi += moveTax;
 
@@ -39,6 +39,6 @@ let startGame = () => {
         contex.drawImage(imgCar, posVosvos, 0, 50, 50);
         contex.drawImage(imgTax, posTaxi, 100, 50, 50);
 
-    }, 50)
+    }, 30)
 
 }
